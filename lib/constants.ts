@@ -74,7 +74,7 @@ export const EXPERIENCE = [
   {
     company: "Raabyt",
     role: "Frontend Architecture Consultant (Remote)",
-    period: "2026",
+    period: "Contract",
     duration: "Project-based",
     href: "",
     focus: "React Architecture, RTK Query, Frontend Performance, CRM Systems",

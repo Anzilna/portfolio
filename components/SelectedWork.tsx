@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import { PROJECTS, PERSONAL_PROJECTS, type Project } from "@/lib/constants";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -27,7 +28,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
           >
             {project.title}
             {project.href && (
-              <span className="ml-3 text-xl font-normal opacity-30">↗</span>
+              <ArrowUpRight size={18} className="ml-2 opacity-30 inline flex-shrink-0" />
             )}
           </h3>
           <span

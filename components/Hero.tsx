@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { ArrowDown } from "lucide-react";
 import { PERSONAL, NAV_LINKS } from "@/lib/constants";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -97,7 +98,7 @@ export default function Hero() {
               className="text-sm font-semibold sm:text-base md:text-xl"
               style={{ color: FG }}
             >
-              ↓&nbsp; Scroll Down
+              <ArrowDown size={16} className="inline mr-2" />Scroll Down
             </motion.a>
           </div>
         </div>

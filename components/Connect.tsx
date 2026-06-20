@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import { PERSONAL, SOCIALS, NAV_LINKS } from "@/lib/constants";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -120,7 +121,7 @@ export default function Connect() {
               el.style.color = BG;
             }}
           >
-            {formOpen ? "Close form" : "Get in touch ↗"}
+            {formOpen ? "Close form" : <span className="flex items-center gap-2">Get in touch <ArrowUpRight size={15} /></span>}
           </button>
         </motion.div>
 
@@ -166,7 +167,7 @@ export default function Connect() {
                     }}
                     onMouseLeave={(e) => { const el = e.currentTarget; el.style.backgroundColor = FG; el.style.color = BG; }}
                   >
-                    {status === "sending" ? "Sending…" : "Send ↗"}
+                    {status === "sending" ? "Sending…" : <span className="flex items-center gap-2">Send <ArrowUpRight size={15} /></span>}
                   </button>
                   {status === "success" && (
                     <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-sm" style={{ color: "rgba(245,242,236,0.65)" }}>

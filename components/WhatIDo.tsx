@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowDownRight } from "lucide-react";
 import { SERVICES } from "@/lib/constants";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -30,13 +31,13 @@ export default function WhatIDo() {
           >
             (What I do)
           </p>
-          <span
-            className="text-4xl font-light md:text-5xl"
+          <ArrowDownRight
+            size={44}
+            strokeWidth={1}
+            className="md:w-[52px] md:h-[52px]"
             style={{ color: "rgb(var(--C-fg))" }}
             aria-hidden="true"
-          >
-            ↘
-          </span>
+          />
         </motion.div>
 
         {/* Services grid */}

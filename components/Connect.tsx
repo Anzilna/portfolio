@@ -189,7 +189,7 @@ export default function Connect() {
       <div className="px-6 md:px-12 border-t" style={{ borderColor: "rgba(245,242,236,0.1)" }}>
         {/* Top row: name + nav */}
         <div className="flex items-center justify-between py-6 border-b" style={{ borderColor: "rgba(245,242,236,0.06)" }}>
-          <span className="text-sm font-semibold tracking-tight" style={{ color: FG }}>
+          <span className="text-xs sm:text-sm font-semibold tracking-tight" style={{ color: FG }}>
             {PERSONAL.name}
           </span>
           <nav className="flex gap-6">
@@ -209,9 +209,14 @@ export default function Connect() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 py-5">
           <div className="flex gap-5">
             {SOCIALS.map((s) => (
-              <a key={s.label} href={s.href} title={s.title} target="_blank" rel="noopener noreferrer"
+              <a
+                key={s.label}
+                href={s.href}
+                title={s.title}
+                {...(s.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-xs font-semibold tracking-wider uppercase underline underline-offset-4 transition-opacity duration-200 hover:opacity-40"
-                style={{ color: "rgba(245,242,236,0.6)" }}>
+                style={{ color: "rgba(245,242,236,0.6)" }}
+              >
                 {s.label}
               </a>
             ))}

@@ -97,7 +97,7 @@ export default function Hero() {
               className="text-sm font-semibold sm:text-base md:text-xl"
               style={{ color: FG }}
             >
-              ↘&nbsp; Scroll Down
+              ↓&nbsp; Scroll Down
             </motion.a>
           </div>
         </div>

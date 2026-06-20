@@ -4,10 +4,10 @@ export const PERSONAL = {
   shortName: "Anzil",
   title: "Full Stack AI Engineer",
   location: "Kerala, India",
-  email: "anziln422@gmail.com",
-  phone: "8589822730",
-  github: "https://github.com/Anzilna",
-  linkedin: "https://linkedin.com/in/Anzil-na",
+  email: process.env.NEXT_PUBLIC_EMAIL ?? "anziln422@gmail.com",
+  phone: process.env.NEXT_PUBLIC_PHONE ?? "8589822730",
+  github: process.env.NEXT_PUBLIC_GITHUB ?? "https://github.com/Anzilna",
+  linkedin: process.env.NEXT_PUBLIC_LINKEDIN ?? "https://linkedin.com/in/Anzil-na",
   aboutStatement:
     "Full Stack Developer with nearly 2 years of hands-on experience building scalable web applications using the MERN stack — from multi-tenant systems and microservices backends to secure payment integrations and DevOps pipelines. Focused on clean, modular, production-ready architecture. AI Engineering is a new skill I'm actively building on top of this foundation.",
 };
@@ -21,8 +21,10 @@ export const NAV_LINKS = [
 
 // ─── Socials ─────────────────────────────────────────────────────────────────
 export const SOCIALS = [
-  { label: "GitHub", href: "https://github.com/Anzilna", title: "GitHub" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/Anzil-na", title: "LinkedIn" },
+  { label: "GitHub", href: PERSONAL.github, title: "GitHub" },
+  { label: "LinkedIn", href: PERSONAL.linkedin, title: "LinkedIn" },
+  { label: "Email", href: `mailto:${PERSONAL.email}`, title: "Email" },
+  { label: "Phone", href: `tel:${PERSONAL.phone}`, title: "Phone" },
 ];
 
 // ─── Services (What I Do) ────────────────────────────────────────────────────

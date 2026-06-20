@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <MarqueeDivider label="Work" />
+      <MarqueeDivider label="Where I Worked" />
       <Experience />
       <WhatIDo />
       <MarqueeDivider label="Projects" />

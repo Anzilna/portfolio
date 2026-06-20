@@ -74,7 +74,7 @@ export const EXPERIENCE = [
   {
     company: "Raabyt",
     role: "Frontend Architecture Consultant (Remote)",
-    period: "2026",
+    period: "Contract",
     duration: "Project-based",
     href: "",
     focus: "React Architecture, RTK Query, Frontend Performance, CRM Systems",
@@ -89,7 +89,7 @@ export const EXPERIENCE = [
   },
 ];
 
-// ─── Selected Work ────────────────────────────────────────────────────────────
+// ─── Projects ─────────────────────────────────────────────────────────────────
 export type Project = {
   title: string;
   description: string;
@@ -100,57 +100,33 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    title: "Multi-Tenant E-Commerce",
+    title: "Production E-Commerce — Monorepo",
     description:
-      "White-label e-commerce platform supporting multiple clients from a single configurable codebase — micro-frontend architecture via Webpack Module Federation, CI/CD with GitHub Actions, and Docker containerisation.",
-    tags: ["Next.js", "Microservices", "Docker", "CI/CD", "Module Federation"],
+      "6-service Dockerized monorepo (Next.js 15 + Express + PostgreSQL + Redis + BullMQ) built with Clean Architecture across 11 modules and 15 database models. Stripe webhook-driven payments, runtime theme engine (DB → CSS custom properties enabling hot-swap templates without redeployment), RTK Query admin panel with shadcn/ui, Redis caching for product and theme read paths, and Next.js 15 ISR with dynamic sitemap.",
+    tags: ["Next.js 15", "Express", "PostgreSQL", "Redis", "BullMQ", "Stripe", "Prisma", "Docker"],
     year: "2025",
     href: "",
-  },
-  {
-    title: "Social Media – Microservices",
-    description:
-      "Scalable backend-only social platform built with 5 independently deployable microservices, API Gateway (JWT), Redis caching, RabbitMQ messaging, and Docker containerisation.",
-    tags: ["Node.js", "Microservices", "Redis", "RabbitMQ", "Docker"],
-    year: "2025",
-    href: "",
-  },
-  {
-    title: "PurelyYou",
-    description:
-      "Full-stack personal care e-commerce platform with Razorpay payments, wallet management, referral system, admin panel with sales reporting, and AWS EC2 deployment behind Nginx.",
-    tags: ["Node.js", "MongoDB", "Razorpay", "AWS EC2", "Nginx"],
-    year: "2024",
-    href: "",
-  },
-  {
-    title: "Chat App",
-    description:
-      "Real-time messaging platform with Socket.IO, message delivery/seen statuses, Cloudinary image uploads, Zustand state management, and multi-theme DaisyUI UI.",
-    tags: ["React", "Socket.IO", "Zustand", "Cloudinary", "DaisyUI"],
-    year: "2025",
-    href: "", // add live Render URL here
   },
 ];
 
-// ─── Personal / Mini Projects ──────────────────────────────────────────────────
-// Shown in a separate "(Personal Work)" section.
-// Auto-hides if empty — add entries here to make the section appear.
-export const PERSONAL_PROJECTS: Project[] = [
+// ─── Freelancing ──────────────────────────────────────────────────────────────
+export const FREELANCE_PROJECTS: Project[] = [
   {
-    title: "Netflix Clone",
+    title: "GDS — Enterprise CRM",
     description:
-      "Responsive movie streaming app using the TMDB API — trending/upcoming categorisation, JWT-based login, Zustand global state, Tailwind CSS.",
-    tags: ["React", "TMDB API", "Zustand", "JWT"],
-    year: "2025",
-    href: "",
+      "Multi-role CRM for GDS Tech Cloud Services — manages clients, experts, invoices, and payments. Next.js 16 App Router with Auth.js v5 RBAC (5 roles), Prisma 7 on Neon PostgreSQL, Razorpay webhooks with GST/international billing and immutable currency rate snapshots, Google Drive API (service account) for invoice storage, and React Email + Resend for transactional notifications.",
+    tags: ["Next.js 16", "Auth.js v5", "Prisma 7", "Razorpay", "Neon", "Google Drive API", "React Email"],
+    year: "2026",
+    href: "https://www.getdirectsupport.com/",
   },
   {
-    title: "User Management System",
+    title: "Cultural Troupe Management — Odisha Govt.",
     description:
-      "Admin dashboard built with the MERN stack featuring JWT authentication, CRUD operations, and role-based access control.",
-    tags: ["React", "Node.js", "MongoDB", "JWT", "RBAC"],
+      "Government web application for the state of Odisha managing cultural troupes, artists, agencies, and events. NestJS 10 GraphQL API with Angular 20 frontend, AES-256-CBC Aadhaar encryption with HMAC tokenization, multi-role registration workflows, Razorpay payment gateway, WebSocket real-time notifications, AWS RDS + S3, and bilingual UI (English + Odia).",
+    tags: ["Angular 20", "NestJS 10", "GraphQL", "AWS RDS + S3", "Razorpay", "WebSockets", "AES-256"],
     year: "2025",
-    href: "",
+    href: "https://www.amakalakara.com/",
   },
 ];
+
+export const PERSONAL_PROJECTS: Project[] = [];

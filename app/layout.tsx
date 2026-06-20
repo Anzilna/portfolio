@@ -12,13 +12,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mohammedanzil.in"),
   title: {
-    default: "Anzil — Full Stack Developer",
+    default: "Anzil — Full Stack AI Engineer",
     template: "%s | Anzil",
   },
   description:
-    "Full Stack Developer with nearly 2 years of experience building scalable MERN applications — microservices, DevOps, payment integrations, and real-time systems. Based in Kerala, India.",
+    "Full Stack AI Engineer with nearly 2 years of experience building scalable web applications — microservices, DevOps, payment integrations, and AI-powered systems. Based in Kerala, India.",
   keywords: [
-    "Full Stack Developer",
+    "Full Stack AI Engineer",
     "MERN Stack",
     "Microservices",
     "React",
@@ -37,15 +37,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mohammedanzil.in",
-    title: "Anzil — Full Stack Developer",
+    title: "Anzil — Full Stack AI Engineer",
     description:
-      "Full Stack Developer (MERN + AI/ML) based in Kerala, India.",
+      "Full Stack AI Engineer (MERN + AI/ML) based in Kerala, India.",
     siteName: "Anzil",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anzil — Full Stack Developer",
-    description: "Full Stack Developer (MERN + AI/ML) based in Kerala, India.",
+    title: "Anzil — Full Stack AI Engineer",
+    description: "Full Stack AI Engineer (MERN + AI/ML) based in Kerala, India.",
     creator: "@anzildev",
   },
   robots: {
@@ -62,9 +62,9 @@ const jsonLd = {
   "@type": "Person",
   name: "Mohammed Anzil N A",
   url: "https://mohammedanzil.in",
-  jobTitle: "Full Stack Developer",
+  jobTitle: "Full Stack AI Engineer",
   description:
-    "Full Stack Developer specialising in MERN stack and AI/ML, based in Kerala, India.",
+    "Full Stack AI Engineer specialising in MERN stack and AI/ML, based in Kerala, India.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Kerala",

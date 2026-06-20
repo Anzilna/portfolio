@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import { render } from "@react-email/render";
 import { z } from "zod";
 import { checkRateLimit } from "@/lib/ratelimit";
+import NotificationEmail from "@/emails/NotificationEmail";
+import ConfirmationEmail from "@/emails/ConfirmationEmail";
 
 const contactSchema = z.object({
   name: z.string().min(1, "Name is required").max(100),
@@ -55,7 +58,12 @@ export async function POST(request: NextRequest) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
 
-  const [notification, confirmation] = await Promise.all([
+  const [notificationHtml, confirmationHtml] = await Promise.all([
+    render(NotificationEmail({ name, email, message })),
+    render(ConfirmationEmail({ name })),
+  ]);
+
+  const [notification] = await Promise.all([
     // To me — new message notification
     resend.emails.send({
       from: "Anzil Portfolio <contact@mohammedanzil.in>",
@@ -63,26 +71,15 @@ export async function POST(request: NextRequest) {
       replyTo: email,
       subject: `New message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-      html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
-        <br />
-        <p><strong>Message:</strong></p>
-        <p style="white-space:pre-wrap">${message}</p>
-      `,
+      html: notificationHtml,
     }),
     // To sender — confirmation email
     resend.emails.send({
       from: "Anzil <contact@mohammedanzil.in>",
       to: email,
-      subject: "Got your message!",
-      text: `Hi ${name},\n\nThanks for reaching out — I've received your message and will get back to you soon.\n\nBest,\nAnzil`,
-      html: `
-        <p>Hi ${name},</p>
-        <p>Thanks for reaching out — I've received your message and will get back to you soon.</p>
-        <br />
-        <p>Best,<br/>Anzil</p>
-      `,
+      subject: "Got your message.",
+      text: `Hi ${name},\n\nThanks for reaching out — I've received your message and will get back to you soon.\n\n— Anzil\nmohammedanzil.in`,
+      html: confirmationHtml,
     }),
   ]);
 

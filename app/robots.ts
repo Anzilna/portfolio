@@ -5,6 +5,6 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       { userAgent: "*", allow: "/", disallow: "/api/" },
     ],
-    sitemap: "https://anzil.dev/sitemap.xml",
+    sitemap: "https://mohammedanzil.in/sitemap.xml",
   };
 }

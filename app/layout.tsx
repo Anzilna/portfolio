@@ -54,6 +54,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: { canonical: "https://mohammedanzil.in" },
+  verification: { google: "fP7Pcxlss5M9Yy8xU5U3ik-UDVxLm4IyqV3qrNKAfYA" },
 };
 
 const jsonLd = {

@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://anzil.dev"),
+  metadataBase: new URL("https://mohammedanzil.in"),
   title: {
     default: "Anzil — Full Stack Developer",
     template: "%s | Anzil",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://anzil.dev",
+    url: "https://mohammedanzil.in",
     title: "Anzil — Full Stack Developer",
     description:
       "Full Stack Developer (MERN + AI/ML) based in Kerala, India.",
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
-  alternates: { canonical: "https://anzil.dev" },
+  alternates: { canonical: "https://mohammedanzil.in" },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Mohammed Anzil N A",
-  url: "https://anzil.dev",
+  url: "https://mohammedanzil.in",
   jobTitle: "Full Stack Developer",
   description:
     "Full Stack Developer specialising in MERN stack and AI/ML, based in Kerala, India.",

@@ -16,7 +16,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
       className="group grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 py-10 md:py-14"
     >
       <div>
-        <div className="flex items-baseline gap-4 mb-4">
+        <div className="flex items-baseline gap-4 mb-3">
           <h3
             className="font-black uppercase leading-none tracking-tight transition-opacity duration-200 group-hover:opacity-60"
             style={{
@@ -37,6 +37,14 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
             {project.year}
           </span>
         </div>
+        {project.subtitle && (
+          <p
+            className="text-sm italic mb-3"
+            style={{ color: "rgba(var(--C-fg), 0.45)" }}
+          >
+            {project.subtitle}
+          </p>
+        )}
         <p
           className="text-sm leading-relaxed max-w-xl"
           style={{ color: "rgba(var(--C-fg), 0.55)" }}

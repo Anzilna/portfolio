@@ -2,14 +2,14 @@
 export const PERSONAL = {
   name: "Mohammed Anzil N A",
   shortName: "Anzil",
-  title: "Full Stack, DevOps & AI Engineer",
-  location: "Kerala, India",
+  title: "Full Stack Engineer (AI & Cloud)",
+  location: "Sharjah, UAE",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "anziln422@gmail.com",
-  phone: process.env.NEXT_PUBLIC_PHONE ?? "8589822730",
+  phone: process.env.NEXT_PUBLIC_PHONE ?? "+971588708813",
   github: process.env.NEXT_PUBLIC_GITHUB ?? "https://github.com/Anzilna",
   linkedin: process.env.NEXT_PUBLIC_LINKEDIN ?? "https://linkedin.com/in/Anzil-na",
   aboutStatement:
-    "Full Stack, DevOps & AI Engineer with 2 years of experience delivering production-ready platforms — from React/Next.js frontends and NestJS/GraphQL backends to end-to-end RAG pipelines, containerized microservices, and GitOps CI/CD. Proven across solo freelance builds, remote teams, and government-grade systems. Focused on shipping reliable, AI-powered products at scale.",
+    "Full Stack Engineer (AI & Cloud) with 2+ years of combined professional and freelance experience delivering production-ready platforms — from React/Next.js frontends and NestJS/GraphQL backends to end-to-end RAG pipelines, containerized microservices, and GitOps CI/CD. Proven across a full-time role, client projects, and government-grade systems.",
 };
 
 // ─── Navigation ──────────────────────────────────────────────────────────────
@@ -69,23 +69,23 @@ export const EXPERIENCE = [
     period: "June 2025 — Present",
     duration: "",
     href: "",
-    focus: "MERN & Next.js, Microservices, RESTful APIs, ERP Systems, Payment Integration, DevOps",
+    focus: "Next.js & PERN, MERN, Microservices, ERP Systems, Payment Integration, DevOps",
   },
   {
-    company: "Raabyt",
-    role: "Frontend Architecture Lead (Remote)",
-    period: "Contract",
-    duration: "Project-based",
+    company: "GDS Tech Cloud Services",
+    role: "Full Stack Developer (Freelance)",
+    period: "LIVE",
+    duration: "",
     href: "",
-    focus: "React Architecture, RTK Query, Frontend Performance, Modular Design, DevOps",
+    focus: "Career Services Platform & CRM — Next.js 16, Auth.js v5, Prisma 7, Razorpay, PDF Invoicing, Transactional Email",
   },
   {
-    company: "Brototype",
-    role: "Full Stack Developer (Remote)",
-    period: "Aug 2024 — Aug 2026",
-    duration: "2 yrs",
+    company: "CTMS",
+    role: "Full Stack Developer (Freelance)",
+    period: "LIVE",
+    duration: "",
     href: "",
-    focus: "MERN, PERN, Microservices, DSA, Cloud Deployment, DevOps",
+    focus: "Cultural Troupe Management System (Odisha Govt.) — NestJS, GraphQL, Angular 20, AES-256 Security, AWS",
   },
 ];
 
@@ -144,8 +144,8 @@ export const FREELANCE_PROJECTS: Project[] = [
     title: "GDS — Enterprise CRM",
     subtitle: "Career services platform and role-based CRM — built solo, end-to-end, for GDS Tech Cloud Services.",
     description:
-      "Multi-role CRM for GDS Tech Cloud Services — manages clients, experts, invoices, and payments. Next.js 16 App Router with Auth.js v5 RBAC (5 roles), Prisma 7 on Neon PostgreSQL, Razorpay webhooks with GST/international billing and immutable currency rate snapshots, Google Drive API (service account) for invoice storage, and React Email + Resend for transactional notifications.",
-    tags: ["Next.js 16", "Auth.js v5", "Prisma 7", "Razorpay", "Neon", "Google Drive API", "React Email"],
+      "Multi-role CRM for GDS Tech Cloud Services — manages clients, experts, invoices, and payments. Next.js 16 App Router with Auth.js v5 RBAC (5 roles) and Prisma 7 on Neon PostgreSQL; a developer time-tracking system that derives payouts directly from logged work sessions; Razorpay webhooks with GST/international billing, immutable currency rate snapshots, and Winston audit logging; PDFKit invoice generation and Google Drive–backed resume storage; React Email + Resend for transactional notifications.",
+    tags: ["Next.js 16", "Auth.js v5", "Prisma 7", "Razorpay", "Neon", "PDFKit", "Google Drive API", "React Email"],
     year: "2026",
     href: "https://www.getdirectsupport.com/",
   },
@@ -153,10 +153,10 @@ export const FREELANCE_PROJECTS: Project[] = [
     title: "Cultural Troupe Management — Odisha Govt.",
     subtitle: "Government-grade platform for Odisha's cultural department — troupes, artist auditions, events, and payments.",
     description:
-      "Government web application for the state of Odisha managing cultural troupes, artists, agencies, and events. NestJS 10 GraphQL API with Angular 20 frontend, AES-256-CBC Aadhaar encryption with HMAC tokenization, multi-role registration workflows, Razorpay payment gateway, WebSocket real-time notifications, AWS RDS + S3, and bilingual UI (English + Odia).",
-    tags: ["Angular 20", "NestJS 10", "GraphQL", "AWS RDS + S3", "Razorpay", "WebSockets", "AES-256"],
+      "Government web application for the state of Odisha managing cultural troupes, artists, agencies, and events. Schema-first GraphQL API with NestJS + TypeORM spanning 30+ business modules; a dual-secret Aadhaar security layer — client-side AES-256-CBC encryption before transmission, server-side re-encryption at rest with a random IV, HMAC-SHA256 tokenization for duplicate detection, and role-aware masking; two Angular frontends (Ionic Angular artist app, Angular Material admin panel) with Socket.IO real-time notifications; Razorpay payments, Leaflet maps, ApexCharts dashboards, and AWS S3.",
+    tags: ["Angular 20", "NestJS", "GraphQL", "TypeORM", "AWS S3", "Razorpay", "Socket.IO", "AES-256"],
     year: "2025",
-    href: "https://www.amakalakara.com/",
+    href: "https://amakalakara.odisha.gov.in/",
   },
 ];
 
@@ -165,11 +165,11 @@ export const PERSONAL_PROJECTS: Project[] = [];
 // ─── Education ────────────────────────────────────────────────────────────────
 export const EDUCATION = [
   {
-    degree: "Full-Stack Development (MERN Stack)",
+    degree: "Full-Stack Development",
     institution: "Brototype",
     type: "Remote",
-    period: "Aug 2024 — Aug 2026",
-    focus: "Full-Stack, DSA, Computer Networking, Databases, Software Architecture — reviewed weekly by industry professionals.",
+    period: "Jun 2024 — May 2025",
+    focus: "Industry-led self-learning program with weekly code reviews by working professionals. Focus: Full-Stack (MERN/PERN), Microservices, DevOps, DSA, System Design.",
   },
   {
     degree: "BCA — Bachelor of Computer Applications",

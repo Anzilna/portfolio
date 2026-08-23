@@ -31,7 +31,7 @@ export default function Experience() {
             (Experience)
           </p>
           <p className="text-xs" style={{ color: "rgba(var(--C-fg), 0.35)" }}>
-            ~2 yrs
+            2+ yrs
           </p>
         </motion.div>
 

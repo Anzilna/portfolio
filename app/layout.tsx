@@ -12,11 +12,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mohammedanzil.in"),
   title: {
-    default: "Mohammed Anzil — Full Stack, DevOps & AI Engineer",
+    default: "Mohammed Anzil — Full Stack Engineer (AI & Cloud)",
     template: "%s | Mohammed Anzil",
   },
   description:
-    "Mohammed Anzil — Full Stack, DevOps & AI Engineer with 2 years of experience delivering production-ready platforms. RAG pipelines, containerized microservices, GitOps CI/CD, Next.js/NestJS. Based in Kerala, India.",
+    "Mohammed Anzil — Full Stack Engineer (AI & Cloud) with 2+ years of combined professional and freelance experience delivering production-ready platforms. RAG pipelines, containerized microservices, GitOps CI/CD, Next.js/NestJS. Based in Sharjah, UAE.",
   keywords: [
     "Mohammed Anzil",
     "Mohammed Anzil N A",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     "NestJS",
     "Node.js",
     "Docker",
-    "Kerala",
-    "India",
+    "Sharjah",
+    "UAE",
     "MongoDB",
     "TypeScript",
     "pgvector",
@@ -44,15 +44,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mohammedanzil.in",
-    title: "Mohammed Anzil — Full Stack, DevOps & AI Engineer",
+    title: "Mohammed Anzil — Full Stack Engineer (AI & Cloud)",
     description:
-      "Mohammed Anzil — Full Stack, DevOps & AI Engineer building production-ready platforms. Based in Kerala, India.",
+      "Mohammed Anzil — Full Stack Engineer (AI & Cloud) building production-ready platforms. Based in Sharjah, UAE.",
     siteName: "Mohammed Anzil",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohammed Anzil — Full Stack, DevOps & AI Engineer",
-    description: "Mohammed Anzil — Full Stack, DevOps & AI Engineer building production-ready platforms. Based in Kerala, India.",
+    title: "Mohammed Anzil — Full Stack Engineer (AI & Cloud)",
+    description: "Mohammed Anzil — Full Stack Engineer (AI & Cloud) building production-ready platforms. Based in Sharjah, UAE.",
     creator: "@anzildev",
   },
   robots: {
@@ -70,13 +70,13 @@ const jsonLd = {
   name: "Mohammed Anzil N A",
   alternateName: ["Mohammed Anzil", "Anzil", "Anzilna"],
   url: "https://mohammedanzil.in",
-  jobTitle: "Full Stack, DevOps & AI Engineer",
+  jobTitle: "Full Stack Engineer (AI & Cloud)",
   description:
-    "Mohammed Anzil — Full Stack, DevOps & AI Engineer delivering production-ready RAG pipelines, microservices, and GitOps CI/CD systems. Based in Kerala, India.",
+    "Mohammed Anzil — Full Stack Engineer (AI & Cloud) delivering production-ready RAG pipelines, microservices, and GitOps CI/CD systems. Based in Sharjah, UAE.",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Kerala",
-    addressCountry: "IN",
+    addressLocality: "Sharjah",
+    addressCountry: "AE",
   },
   sameAs: [
     "https://github.com/Anzilna",

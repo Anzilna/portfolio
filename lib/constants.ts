@@ -6,6 +6,7 @@ export const PERSONAL = {
   location: "Sharjah, UAE",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "anziln422@gmail.com",
   phone: process.env.NEXT_PUBLIC_PHONE ?? "+971588708813",
+  phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "+971 58 870 8813",
   github: process.env.NEXT_PUBLIC_GITHUB ?? "https://github.com/Anzilna",
   linkedin: process.env.NEXT_PUBLIC_LINKEDIN ?? "https://linkedin.com/in/Anzil-na",
   aboutStatement:

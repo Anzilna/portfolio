@@ -81,15 +81,27 @@ export default function Hero() {
 
           {/* Bottom bar */}
           <div className="flex items-end justify-between gap-4">
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              className="text-sm font-semibold sm:text-base md:text-xl"
-              style={{ color: FG }}
-            >
-              ({PERSONAL.location})
-            </motion.p>
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:gap-6">
+              <motion.p
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="text-sm font-semibold sm:text-base md:text-xl"
+                style={{ color: FG }}
+              >
+                ({PERSONAL.location})
+              </motion.p>
+              <motion.a
+                href={`tel:${PERSONAL.phone}`}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.75 }}
+                className="text-sm font-semibold transition-opacity duration-200 hover:opacity-60 sm:text-base md:text-xl"
+                style={{ color: FG }}
+              >
+                ({PERSONAL.phoneDisplay})
+              </motion.a>
+            </div>
             <motion.a
               href="#about"
               initial={{ opacity: 0, y: 16 }}

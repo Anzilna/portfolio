@@ -3,14 +3,14 @@ export const PERSONAL = {
   name: "Mohammed Anzil N A",
   shortName: "Anzil",
   title: "Full Stack Engineer (AI & Cloud)",
-  location: "Sharjah, UAE",
+  location: "Dubai, UAE",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "anziln422@gmail.com",
   phone: process.env.NEXT_PUBLIC_PHONE ?? "+971588708813",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "+971 58 870 8813",
   github: process.env.NEXT_PUBLIC_GITHUB ?? "https://github.com/Anzilna",
   linkedin: process.env.NEXT_PUBLIC_LINKEDIN ?? "https://linkedin.com/in/Anzil-na",
   aboutStatement:
-    "Full Stack Engineer (AI & Cloud) with 2+ years of combined professional and freelance experience delivering production-ready platforms — from React/Next.js frontends and NestJS/GraphQL backends to end-to-end RAG pipelines, containerized microservices, and GitOps CI/CD. Proven across a full-time role, client projects, and government-grade systems.",
+    "Full Stack Engineer (AI & Cloud) with 3 years of combined professional and freelance experience delivering production-ready platforms — from React/Next.js frontends and NestJS/GraphQL backends to end-to-end RAG pipelines, containerized microservices, and GitOps CI/CD. Proven across a full-time role, client projects, and government-grade systems.",
 };
 
 // ─── Navigation ──────────────────────────────────────────────────────────────
@@ -33,60 +33,60 @@ export const SERVICES = [
   {
     title: "Full Stack Development",
     description:
-      "End-to-end MERN & Next.js applications — RESTful APIs, authentication (JWT, OAuth), payment systems (Stripe, Razorpay), and Redis caching.",
+      "End-to-end Next.js, PERN & MERN applications — SEO-ready SSR/ISR frontends, NestJS/GraphQL and RESTful backends, JWT auth, and payment systems (Stripe Connect, Razorpay).",
   },
   {
-    title: "Microservices Architecture",
+    title: "Distributed Systems",
     description:
-      "Designing independently deployable services with API Gateways, RabbitMQ messaging, and structured logging using Winston.",
+      "Independently deployable microservices behind API Gateways, event-driven messaging with Kafka, RabbitMQ and BullMQ, Transactional Outbox, CDC pipelines, and Redis caching.",
   },
   {
-    title: "DevOps & GitOps",
+    title: "Cloud & DevOps",
     description:
-      "Docker, Kubernetes, Argo CD, and GitHub Actions CI/CD — from containerised dev environments to K8s HPA auto-scaling in production.",
+      "AWS (EKS, RDS, ElastiCache, S3), Terraform, Docker, Kubernetes HPA auto-scaling, and GitOps CI/CD with Argo CD and GitHub Actions — plus Nginx and Cloudflare at the edge.",
   },
   {
-    title: "UI Implementation",
+    title: "Web Security",
     description:
-      "Pixel-precise React component systems using ShadCN/UI, DaisyUI, and RTK Query — with micro-frontend architecture via Webpack Module Federation.",
+      "Row-Level Security for multi-tenant isolation, RBAC, JWT with HttpOnly cookies, webhook signature verification, idempotent payments, and AES-256 / HMAC-SHA256 data protection.",
   },
   {
     title: "AI Engineering",
     description:
-      "End-to-end RAG pipelines — chunking, pgvector embeddings, hybrid search (dense + BM25), RRF fusion, and LLM streaming via Groq/LangGraph. Built without black-box libraries.",
+      "End-to-end RAG pipelines — chunking, pgvector embeddings, hybrid search (dense + BM25), RRF fusion, and LLM streaming. LangGraph/LangChain orchestration, MCP tool registries, and multi-agent systems with the OpenAI API.",
   },
   {
     title: "GraphQL & API Design",
     description:
-      "Schema-first GraphQL APIs with NestJS + TypeORM spanning complex business domains — multi-role auth, real-time subscriptions, and RESTful service contracts.",
+      "Schema-first GraphQL APIs with NestJS + TypeORM spanning 30+ business modules — multi-role auth, real-time Socket.IO notifications, and clean RESTful service contracts.",
   },
 ];
 
 // ─── Experience ───────────────────────────────────────────────────────────────
 export const EXPERIENCE = [
   {
-    company: "Odidor",
+    company: "Odidor, Canada",
     role: "Full Stack Developer (Remote)",
-    period: "June 2025 — Present",
-    duration: "",
+    period: "Jun 2025 — Sep 2026",
+    duration: "1 Yr 4 Mo",
     href: "",
-    focus: "Next.js & PERN, MERN, Microservices, ERP Systems, Payment Integration, DevOps",
+    focus: "Next.js & PERN, MERN, Microservices, ERP Systems, Payment Integration (Stripe Connect, Razorpay), DevOps",
   },
   {
     company: "GDS Tech Cloud Services",
     role: "Full Stack Developer (Freelance)",
     period: "LIVE",
     duration: "",
-    href: "",
-    focus: "Career Services Platform & CRM — Next.js 16, Auth.js v5, Prisma 7, Razorpay, PDF Invoicing, Transactional Email",
+    href: "https://www.getdirectsupport.com/",
+    focus: "Career Services Platform & CRM — Next.js 16, TypeScript, PostgreSQL (Neon), Prisma 7, Auth.js v5, Razorpay, Resend, PDFKit",
   },
   {
-    company: "CTMS",
+    company: "Ama Kalakara",
     role: "Full Stack Developer (Freelance)",
     period: "LIVE",
     duration: "",
-    href: "",
-    focus: "Cultural Troupe Management System (Odisha Govt.) — NestJS, GraphQL, Angular 20, AES-256 Security, AWS",
+    href: "https://amakalakara.odisha.gov.in/",
+    focus: "Cultural Troupe Management System (Odisha Government) — NestJS, GraphQL, Angular 20, BullMQ, Redis, AWS, AES-256 Security",
   },
 ];
 
@@ -102,40 +102,40 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    title: "DocAI — Agentic RAG Platform",
-    subtitle: "SaaS platform to chat with any PDF — end-to-end RAG pipeline built from scratch.",
+    title: "Folkshops — Multi-Tenant E-Commerce SaaS",
+    subtitle: "Multi-tenant commerce platform with database-enforced tenant isolation, event-driven payments, and an MCP-powered AI shopping assistant.",
     description:
-      "SaaS platform to chat with any PDF — full RAG pipeline engineered from scratch without black-box libraries. 384-dim embeddings in pgvector (cosine + IVFFlat), hybrid search (dense vector + BM25) with RRF fusion, end-to-end LLM streaming (ndjson) from FastAPI → NestJS → Next.js with page-level citations. Zero-cost local embeddings via sentence-transformers; production async Python with SQLAlchemy async sessions.",
-    tags: ["FastAPI", "NestJS", "Next.js", "pgvector", "Groq", "MinIO", "Redis", "Docker", "Turborepo"],
+      "Tenant-scoped PostgreSQL Row-Level Security with server-side tenant context resolution; a Transactional Outbox + BullMQ workflow that persists payment state and order.paid events atomically; Redis cache-aside with tenant-aware keys and Set-based tag invalidation. Stripe Connect hosted onboarding and destination charges with webhook signature verification and idempotent payment initiation; read/write routing for read replicas; a PostgreSQL → Debezium → Kafka → Elasticsearch CDC pipeline for search. AI shopping assistant built on a typed MCP tool registry with Hexagonal Architecture, targeting AWS EKS, RDS, ElastiCache, Terraform, and Argo CD.",
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Drizzle ORM", "Redis", "BullMQ", "Stripe Connect", "Kafka", "MCP"],
     year: "2026",
     href: "",
+  },
+  {
+    title: "DocAI — Agentic RAG Platform",
+    subtitle: "SaaS platform for conversational PDF analysis — end-to-end RAG pipeline built from scratch.",
+    description:
+      "End-to-end RAG pipeline engineered from scratch — PDF ingestion, parsing, chunking, embedding, retrieval, context assembly, and generation. Hybrid retrieval (dense vector + BM25) fused with Reciprocal Rank Fusion; 384-dim BGE embeddings in pgvector with cosine similarity and IVFFlat indexing; page-level citations traced back to source PDF pages; end-to-end NDJSON LLM streaming across FastAPI → NestJS → Next.js. Local sentence-transformers embeddings avoid external API costs.",
+    tags: ["FastAPI", "NestJS", "Next.js", "pgvector", "OpenAI API", "Groq", "SQLAlchemy", "MinIO", "Docker"],
+    year: "2026",
+    href: "https://github.com/Anzilna/DocAi-",
   },
   {
     title: "TaskFlow — K8s + GitOps Platform",
-    subtitle: "Real-time job-processing system — a DevOps showcase with Kubernetes auto-scaling and GitOps CI/CD.",
+    subtitle: "Real-time distributed job-processing system with Kubernetes autoscaling, GitOps CI/CD, and a companion mobile app.",
     description:
-      "Real-time distributed job-processing system — a DevOps showcase deployed on Kubernetes with GitOps CI/CD. Redis + BullMQ async job queue with live Socket.IO status updates; K8s HPA auto-scaling workers from 2 to 10 replicas at 50 concurrent jobs. GitOps pipeline with Argo CD and GitHub Actions (lint → build → push → infra update); Redis AOF persistence so jobs survive pod restarts.",
-    tags: ["Node.js", "React", "BullMQ", "Socket.IO", "Kubernetes", "Argo CD", "GitHub Actions", "Docker"],
+      "BullMQ + Redis async job queue decoupling long-running work from API requests, with live Socket.IO status updates and no polling. Kubernetes HPA scales workers from 2 to 10 replicas for peaks of 50 concurrent jobs; Redis AOF persistence keeps queued jobs across pod restarts. GitOps CI/CD with GitHub Actions and Argo CD (lint → build → push → infra update). React dashboard plus a React Native (Expo) app with bearer-token auth, React Query, and a live Socket.IO task feed.",
+    tags: ["Node.js", "React", "React Native", "BullMQ", "Socket.IO", "Kubernetes", "Argo CD", "GitHub Actions"],
     year: "2026",
-    href: "",
-  },
-  {
-    title: "Multi-Tenant E-Commerce — Monorepo",
-    subtitle: "Configurable white-label storefront for multiple clients — multi-tenancy and micro-frontend architecture.",
-    description:
-      "6-service Dockerized monorepo (Next.js 15 + Express + PostgreSQL + Redis + BullMQ) built with Clean Architecture across 11 modules and 15 database models. Stripe webhook-driven payments, runtime theme engine (DB → CSS custom properties enabling hot-swap templates without redeployment), RTK Query admin panel with shadcn/ui, Redis caching for product and theme read paths, and Next.js 15 ISR with dynamic sitemap.",
-    tags: ["Next.js 15", "Express", "PostgreSQL", "Redis", "BullMQ", "Stripe", "Prisma", "Docker"],
-    year: "2025",
     href: "",
   },
   {
     title: "Social Media — Backend Microservices",
-    subtitle: "Backend-only social platform — microservices, API gateway, and inter-service messaging.",
+    subtitle: "Backend-only social platform — independently deployable services, API gateway, and async inter-service messaging.",
     description:
-      "Backend-only social platform built as a microservices architecture showcase. 5 independently deployable services behind an API Gateway with JWT auth, Redis caching for hot read paths, and RabbitMQ for async inter-service messaging. Structured logging via Winston across all services.",
+      "5 independently deployable microservices behind an API Gateway with centralized routing and JWT authentication. RabbitMQ for event-driven inter-service communication, Redis caching for hot read paths, MongoDB persistence, Docker-containerized services, and Winston structured logging for tracing across the system.",
     tags: ["Node.js", "Express", "MongoDB", "Redis", "RabbitMQ", "JWT", "Docker", "API Gateway"],
     year: "2025",
-    href: "",
+    href: "https://github.com/Anzilna/Social-Media-Microservices",
   },
 ];
 
@@ -143,19 +143,19 @@ export const PROJECTS: Project[] = [
 export const FREELANCE_PROJECTS: Project[] = [
   {
     title: "GDS — Enterprise CRM",
-    subtitle: "Career services platform and role-based CRM — built solo, end-to-end, for GDS Tech Cloud Services.",
+    subtitle: "Career services platform and multi-role CRM — built solo, end-to-end, and running in production.",
     description:
-      "Multi-role CRM for GDS Tech Cloud Services — manages clients, experts, invoices, and payments. Next.js 16 App Router with Auth.js v5 RBAC (5 roles) and Prisma 7 on Neon PostgreSQL; a developer time-tracking system that derives payouts directly from logged work sessions; Razorpay webhooks with GST/international billing, immutable currency rate snapshots, and Winston audit logging; PDFKit invoice generation and Google Drive–backed resume storage; React Email + Resend for transactional notifications.",
-    tags: ["Next.js 16", "Auth.js v5", "Prisma 7", "Razorpay", "Neon", "PDFKit", "Google Drive API", "React Email"],
+      "Public marketing and payments site plus a multi-role CRM (Admin, Manager, HR, Expert, Client) for GDS Tech Cloud Services. Next.js 16 with Auth.js v5 and Prisma 7 on Neon PostgreSQL; a developer time-tracking system that derives payments directly from logged work sessions; Razorpay with international payments, webhook signature validation, and Winston audit logging; PDFKit invoicing, Google Drive–backed file storage, Zod validation, and Resend transactional email.",
+    tags: ["Next.js 16", "Auth.js v5", "Prisma 7", "Razorpay", "Neon", "PDFKit", "Resend", "Zod"],
     year: "2026",
     href: "https://www.getdirectsupport.com/",
   },
   {
-    title: "Cultural Troupe Management — Odisha Govt.",
-    subtitle: "Government-grade platform for Odisha's cultural department — troupes, artist auditions, events, and payments.",
+    title: "Ama Kalakara — Odisha Govt.",
+    subtitle: "Government-grade platform for Odisha's cultural department — troupes, auditions, events, payments, and work orders.",
     description:
-      "Government web application for the state of Odisha managing cultural troupes, artists, agencies, and events. Schema-first GraphQL API with NestJS + TypeORM spanning 30+ business modules; a dual-secret Aadhaar security layer — client-side AES-256-CBC encryption before transmission, server-side re-encryption at rest with a random IV, HMAC-SHA256 tokenization for duplicate detection, and role-aware masking; two Angular frontends (Ionic Angular artist app, Angular Material admin panel) with Socket.IO real-time notifications; Razorpay payments, Leaflet maps, ApexCharts dashboards, and AWS S3.",
-    tags: ["Angular 20", "NestJS", "GraphQL", "TypeORM", "AWS S3", "Razorpay", "Socket.IO", "AES-256"],
+      "Schema-first GraphQL API with NestJS + TypeORM spanning 30+ business modules. A dual-secret Aadhaar security layer — client-side AES-256-CBC encryption before transmission, server-side re-encryption at rest with a random IV, and an HMAC-SHA256 token for duplicate detection. Capacity-based audition scheduling that auto-splits into 50-troupe Artform Groups, backed by a BullMQ + Redis SMS/Email pipeline with live job monitoring. Angular 20 frontends with Socket.IO notifications, Razorpay, Leaflet maps, ApexCharts, and AWS EC2/S3.",
+    tags: ["Angular 20", "NestJS", "GraphQL", "TypeORM", "BullMQ", "Redis", "AWS", "AES-256"],
     year: "2025",
     href: "https://amakalakara.odisha.gov.in/",
   },

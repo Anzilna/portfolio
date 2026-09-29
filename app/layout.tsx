@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Mohammed Anzil",
   },
   description:
-    "Mohammed Anzil — Full Stack Engineer (AI & Cloud) with 2+ years of combined professional and freelance experience delivering production-ready platforms. RAG pipelines, containerized microservices, GitOps CI/CD, Next.js/NestJS. Based in Sharjah, UAE.",
+    "Mohammed Anzil — Full Stack Engineer (AI & Cloud) with 3 years of combined professional and freelance experience delivering production-ready platforms. RAG pipelines, containerized microservices, GitOps CI/CD, Next.js/NestJS. Based in Dubai, UAE.",
   keywords: [
     "Mohammed Anzil",
     "Mohammed Anzil N A",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "NestJS",
     "Node.js",
     "Docker",
-    "Sharjah",
+    "Dubai",
     "UAE",
     "MongoDB",
     "TypeScript",
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
     url: "https://mohammedanzil.in",
     title: "Mohammed Anzil — Full Stack Engineer (AI & Cloud)",
     description:
-      "Mohammed Anzil — Full Stack Engineer (AI & Cloud) building production-ready platforms. Based in Sharjah, UAE.",
+      "Mohammed Anzil — Full Stack Engineer (AI & Cloud) building production-ready platforms. Based in Dubai, UAE.",
     siteName: "Mohammed Anzil",
   },
   twitter: {
     card: "summary_large_image",
     title: "Mohammed Anzil — Full Stack Engineer (AI & Cloud)",
-    description: "Mohammed Anzil — Full Stack Engineer (AI & Cloud) building production-ready platforms. Based in Sharjah, UAE.",
+    description: "Mohammed Anzil — Full Stack Engineer (AI & Cloud) building production-ready platforms. Based in Dubai, UAE.",
     creator: "@anzildev",
   },
   robots: {
@@ -72,10 +72,10 @@ const jsonLd = {
   url: "https://mohammedanzil.in",
   jobTitle: "Full Stack Engineer (AI & Cloud)",
   description:
-    "Mohammed Anzil — Full Stack Engineer (AI & Cloud) delivering production-ready RAG pipelines, microservices, and GitOps CI/CD systems. Based in Sharjah, UAE.",
+    "Mohammed Anzil — Full Stack Engineer (AI & Cloud) delivering production-ready RAG pipelines, microservices, and GitOps CI/CD systems. Based in Dubai, UAE.",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Sharjah",
+    addressLocality: "Dubai",
     addressCountry: "AE",
   },
   sameAs: [

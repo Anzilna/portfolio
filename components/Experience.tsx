@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import { EXPERIENCE } from "@/lib/constants";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -31,7 +32,7 @@ export default function Experience() {
             (Experience)
           </p>
           <p className="text-xs" style={{ color: "rgba(var(--C-fg), 0.35)" }}>
-            2+ yrs
+            3 yrs
           </p>
         </motion.div>
 
@@ -81,12 +82,25 @@ export default function Experience() {
                 </div>
 
                 <div className="flex-shrink-0 text-right">
-                  <p
-                    className="text-xs font-medium whitespace-nowrap"
-                    style={{ color: "rgba(var(--C-fg), 0.45)" }}
-                  >
-                    {job.period}
-                  </p>
+                  {job.href ? (
+                    <a
+                      href={job.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-medium whitespace-nowrap underline underline-offset-4 transition-opacity duration-200 hover:opacity-60"
+                      style={{ color: "rgba(var(--C-fg), 0.7)" }}
+                    >
+                      {job.period}
+                      <ArrowUpRight size={12} />
+                    </a>
+                  ) : (
+                    <p
+                      className="text-xs font-medium whitespace-nowrap"
+                      style={{ color: "rgba(var(--C-fg), 0.45)" }}
+                    >
+                      {job.period}
+                    </p>
+                  )}
                 </div>
               </div>
             </motion.div>
